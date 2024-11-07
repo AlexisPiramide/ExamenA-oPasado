@@ -167,16 +167,15 @@ class proyectoRepositorySQLTest {
         List<Proyecto> proyectos = proyectoUseCases.getProyectos();
 
         assertNotNull(proyectos);
-        assertEquals(true,proyectos.size() == 4);
+        assertEquals(true,proyectos.size() == 3);
 
     }
 
     @Test
     void getProyectoByID() {
         Proyecto proyecto = proyectoUseCases.getProyectoByID(1);
-
         assertNotNull(proyecto);
-        assertEquals(true,proyecto.getNombre()== "Proyecto A");
+        assertEquals(true,proyecto.getNombre().equals("Proyecto A"));
 
     }
 

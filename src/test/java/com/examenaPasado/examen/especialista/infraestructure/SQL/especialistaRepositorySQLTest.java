@@ -176,6 +176,8 @@ class especialistaRepositorySQLTest {
         Especialista especialista = especialistaUseCases.getEspecialistaByID(1);
 
         assertNotNull(especialista);
-        assertEquals(true, especialista.getNombre() == "Juan Pérez");
+
+        assertEquals("Juan Pérez", especialista.getNombre());
     }
+
 }

@@ -172,10 +172,8 @@ class especialidadRepositorySQLTest {
         Especialidad especialidad = especialidadUseCases.getEspecialidadByCodigo("ESP1");
 
         assertNotNull(especialidad);
-        assertEquals(true, especialidad.getNombre() == "Desarrollo de Software    Connection connection = null;\n" +
-                "    PreparedStatement stmtTareas = null;\n" +
-                "    PreparedStatement stmtEspecialistas = null;\n" +
-                "    PreparedStatement stmtProyectos = null;\n" +
-                "    PreparedStatement stmtEspecialidades = null;");
+
+        assertEquals("Desarrollo de Software", especialidad.getNombre());
     }
+
 }
