@@ -18,7 +18,7 @@ public class tareaUseCases {
     public Tarea newTarea(Tarea tarea){
         return  this.tareaRepository.newTarea(tarea);
     }
-    public boolean asignarTarea(Integer proyecto,String tarea){
-        return  this.tareaRepository.asignarTarea(proyecto,tarea);
+    public boolean asignarTarea(Integer proyecto,String tarea,Integer especialista){
+        return  this.tareaRepository.asignarTarea(proyecto,tarea,especialista);
     }
 }

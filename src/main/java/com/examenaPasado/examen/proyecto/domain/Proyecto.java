@@ -19,4 +19,14 @@ public class Proyecto {
         return nombre;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    @Override
+    public String toString() {
+        return "Proyecto{" +
+                "nombre='" + nombre + '\'' +
+                '}';
+    }
 }

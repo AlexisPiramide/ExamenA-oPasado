@@ -37,4 +37,15 @@ public class Tarea {
     public Especialista getEspecialista() {
         return especialista;
     }
+
+    @Override
+    public String toString() {
+        return "Tarea{" +
+                "codigo='" + codigo + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", proyecto=" + proyecto +
+                ", especialidad=" + especialidad +
+                ", especialista=" + especialista +
+                '}';
+    }
 }

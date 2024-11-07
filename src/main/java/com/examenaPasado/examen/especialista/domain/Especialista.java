@@ -26,4 +26,16 @@ public class Especialista {
     public Especialidad getEspecialidad() {
         return especialidad;
     }
+
+    public Integer getId() {
+        return id;
+    }
+
+    @Override
+    public String toString() {
+        return "Especialista{" +
+                "nombre='" + nombre + '\'' +
+                ", especialidad=" + especialidad +
+                '}';
+    }
 }
